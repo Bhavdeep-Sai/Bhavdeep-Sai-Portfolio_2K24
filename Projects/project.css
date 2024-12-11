@@ -1,5 +1,7 @@
 body{
-  background: linear-gradient(270deg, rgb(255, 187, 0) 2%, rgba(0,2,3,1) 40%);
+  background: linear-gradient(270deg, #2c5364, #203a43,#0f2027);
+
+
 }
 header{
 background-color: black;
@@ -19,19 +21,6 @@ header>h1{
 
 }
 
-#About{
-background-color: yellow;
-padding: 10px;
-border-radius: 10px;
-text-align: center;
-font-weight: bolder;
-font-size: 20px;
-border: 3px solid black;
-position: fixed;
-right: 5px;
-
-
-}
 
 nav{
 width: 100%;
@@ -90,7 +79,7 @@ bottom: -3px;
 left: 0;
 width: 0%;
 height: 3px;
-background-color: #077b32;
+background-color: purple;
 transition: 0.2s linear;
 }
 
@@ -99,7 +88,7 @@ width: 100%;
 }
 
 .nav-container .links a:hover{
-color: #077b32;
+color: #231942;
 }
 
 .dropdown{
@@ -128,7 +117,7 @@ transition: 0.2s linear;
 background-color: #077b32;
 }
 
-.one{
+/* .one{
   height: 400px;
   background-color: white;
 }
@@ -145,9 +134,9 @@ margin-top: 5vw;
 .project{
 box-shadow: 0px 0px 20px yellow;
 border-radius: 20px;
-}
+} */
 
-h2{
+.soon{
 color: yellow;
 text-align: center;
 font-size: 30px;
@@ -159,7 +148,7 @@ display: flex;
 justify-content: center;
 }
 .loader {
---c:no-repeat linear-gradient(orange 0 0);
+--c:no-repeat linear-gradient(#07bebb 0 0);
 background: 
   var(--c),var(--c),var(--c),
   var(--c),var(--c),var(--c),
@@ -240,3 +229,172 @@ nav .logo {
   margin: 5px; /* Add some margin for spacing */
 }
 }
+
+
+
+#IMAGE {
+  font-family: Arial, sans-serif;
+  background-color: rgba(43, 39, 39, 0.25);
+  box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px ;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(170, 165, 165, 0.5);
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: rgb(102, 8, 8);
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4e4545;
+  margin: 10px 0;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tag1 {
+  background-color: #03680c;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.tag2 {
+  background-color: #868f00;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.tag3 {
+  background-color: #9c0404;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.15s, color 0.25s;
+}
+
+.button:hover {
+  background-color:#231942 ;
+  color:#f9dbbd ;
+}
+
+
+
+
+@media (max-width: 600px) {
+    IMAGE {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .tag {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+header {
+  background-color: black;
+  text-align: center;
+  color: rgba(255, 188, 2, 1);
+  height: 100px;
+  border-radius: 10px;
+  padding: auto;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 188, 2);
+}
+
+header>h1 {
+  font-family: Verdana;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px orangered;
+
+}
+
+.contant {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #bb9457;
+  border-radius: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+
+
+

@@ -2,20 +2,33 @@
     font-family: 'Digital-7';
     src: url('../fonts/digital-7.ttf');
 }
-body{
+
+body {
     background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
 }
 
 .digital-clock {
     background-color: #000;
     color: white;
-    width: 50vw;
+     
     justify-content: space-around;
     display: flex;
     border-radius: 2rem;
     user-select: none;
     padding: 0 2rem;
     border: 0.5rem solid grey;
+    flex-wrap: wrap; 
+    margin: 0 auto; 
 }
 
 .week {
@@ -23,7 +36,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: 4rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: grey;
@@ -43,10 +56,68 @@ body{
     display: inline-block;
     font-size: 13rem;
 }
-.dot{
+
+.dot {
     color: red;
 }
 
 .invisible {
     visibility: hidden;
+}
+
+
+@media (max-width: 1024px) {
+    .digital-clock {
+        width: 70vw; 
+    }
+
+    .min,
+    .hour,
+    .dot {
+        font-size: 10rem; 
+    }
+
+    .week {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .digital-clock {
+        width: 85vw; 
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .min,
+    .hour,
+    .dot {
+        font-size: 8rem; 
+    }
+
+    .week {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .digital-clock {
+        width: 90vw;
+        padding: 0.5rem;
+    }
+
+    .min,
+    .hour,
+    .dot {
+        font-size: 6rem;
+    }
+
+    .week {
+        font-size: 0.8rem;
+        width: auto;
+    }
+
+    .Contant {
+        padding-top: 15%;
+    }
 }
