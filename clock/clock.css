@@ -75,6 +75,9 @@ body{
         display: inline-block;
         font-size: 3rem;
     }
+    .digital-clock{
+        border-width: 0.25rem;
+    }
 }
 @media (max-width: 200px){
     .week{
@@ -85,5 +88,8 @@ body{
     .dot {
         display: inline-block;
         font-size: 1.5rem;
+    }
+    .digital-clock{
+        border-width: 0.25rem;
     }
 }
