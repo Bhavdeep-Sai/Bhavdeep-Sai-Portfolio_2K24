@@ -1,159 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=HTML.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.HTML/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
     <link rel="stylesheet" href="project.css">
 </head>
-
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Bhavdeep <span>Projects</span>
+    <header>
+        <h1>Projects</h1>
+        <a href="../index.html" class="back-button">Back</a>
+    </header>
+    <main>
+        <div class="projects-grid">
+            <div class="project-card">
+                <a href="../List_of_Projects/Login_page.html"><img src="../images/Login page.jpeg" alt="Project 1"></a>
+                <h2>Login Page</h2>
+                <p>A clear and simple logon page</p>
             </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="../index.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="https://www.instagram.com/bhavdeep_sai/profilecard/?igsh=MWI5bmhvdWZsZGx6bw==">Contact</a></div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-    </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="../index.html">About</a>
-                <a href="https://www.instagram.com/bhavdeep_sai/profilecard/?igsh=MWI5bmhvdWZsZGx6bw==">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            <div class="project-card">
+                <a href="../List_of_Projects/clock/Clock.html"><img src="../images/Clock.jpeg" alt="Project 2"></a>
+                <h2>Digital Clock</h2>
+                <p>A Working digital clock</p>
             </div>
-        </div>
-    </nav>
-    <div id="IMAGE">
-        <div class="card">
-            <img src="../images/Login page.jpeg" alt="Project_image">
-            <h2>Login Page</h2>
-            <p>A Organised Login page Design
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
+            <div class="project-card">
+                <a href="../List_of_Projects/Social_media.html"><img src="../images/Social media.png" alt="Project 3"></a>
+                <h2>Social media nav</h2>
+                <p>Navigation bar with Social media icon</p>
             </div>
-            <a href="../List_of_Projects/Login_page.html" class="button">View Project</a>
-        </div>
+            <div class="project-card">
+                <a href="../List_of_Projects/note-app/notes.html"><img src="../images/notes.jpeg" alt="Project 1"></a>
+                <h2>Notes</h2>
+                <p>Notes maker</p>
+            </div>
+            <div class="project-card">
+                <a href="../List_of_Projects/Tic-Tac-Toe/tic-tac.html"><img src="../images/Tic-Tac-Toe.jpeg" alt="Project 1"></a>
+                <h2>Tic-Tac-Toe</h2>
+                <p>A small Fun game</p>
+            </div>
+            <!-- <div class="project-card">
+                <a href=""><img src="" alt="Project 1"></a>
+                <h2>Project Title 1</h2>
+                <p>Short description of the project.</p>
+            </div> -->
 
-        <div class="card">
-            <img src="../images/Clock.jpeg" alt="Project_image">
-            <h2>Real-Time Clock</h2>
-            <p>An Digital Clock which shows the exact Time.
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="../List_of_Projects/clock/Clock.html" class="button">View Project</a>
         </div>
-
-        <div class="card">
-            <img src="../images/Social media.png" alt="Project_image">
-            <h2>Social_Media Navigation Bar</h2>
-            <p>Simple Animated Nav bar
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="../List_of_Projects/Social_media.html" class="button">View Project</a>
-        </div>
-
-        <div class="card">
-            <img src="../images/Tic-Tac-Toe.jpeg" alt="Project_image">
-            <h2>Tic-Tac-Toe</h2>
-            <p>A Simple Fun Game
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="../List_of_Projects/Tic-Tac-Toe/tic-tac.html" class="button">View Project</a>
-        </div>
-        <!-- <div class="card">
-            <img src="../images/notes.jpeg" alt="Project_image">
-            <h2>Project Heading</h2>
-            <p>Description About Project 
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="../List_of_Projects/note-app/notes.html" class="button">View Project</a>
-        </div>
-        <div class="card">
-            <img src="#" alt="Project_image">
-            <h2>Project Heading</h2>
-            <p>Description About Project 
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="#" class="button">View Project</a>
-        </div>
-        <div class="card">
-            <img src="#" alt="Project_image">
-            <h2>Project Heading</h2>
-            <p>Description About Project 
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="#" class="button">View Project</a>
-        </div>
-        <div class="card">
-            <img src="#" alt="Project_image">
-            <h2>Project Heading</h2>
-            <p>Description About Project 
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="#" class="button">View Project</a>
-        </div>
-        <div class="card">
-            <img src="#" alt="Project_image">
-            <h2>Project Heading</h2>
-            <p>Description About Project 
-            </p>
-            <div class="tags">
-                <div class="tag1">HTML</div>
-                <div class="tag2">CSS</div>
-                <div class="tag3">JavaScript</div>
-            </div>
-            <a href="#" class="button">View Project</a>
-        </div> -->
-    </div>
-
-    <h2 class="soon">More Projects Comming Soooon!</h2>
-    <div id="loader">
-    <div class="loader"></div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:0});
-    </script>
-    <script src="project.js"></script>
+    </main>
+    <footer>
+        &copy; All projects were done by Bhavdeep
+    </footer>
 </body>
-
 </html>
