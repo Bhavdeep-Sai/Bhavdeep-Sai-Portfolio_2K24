@@ -54,9 +54,9 @@ body{
 .invisible {
     visibility: hidden;
 }
-@media (max-width: 600px){
+@media (max-width: 800px){
     .week{
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
     .min,
 .hour,
@@ -65,9 +65,20 @@ body{
     font-size: 5rem;
 }
 }
-@media (max-width: 400px){
+@media (max-width: 600px){
     .week{
-        display: none;
+        font-size: 0.6rem;
+    }
+    .min,
+.hour,
+.dot {
+    display: inline-block;
+    font-size: 5rem;
+}
+}
+@media (max-width: 600px){
+    .week{
+        font-size: 0.5rem;
     }
     .min,
     .hour,
