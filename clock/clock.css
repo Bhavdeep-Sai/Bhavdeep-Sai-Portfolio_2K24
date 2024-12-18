@@ -5,7 +5,11 @@
 body{
     background-color: black;
 }
-
+.contant{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px ;
+}
 .digital-clock {
     background-color: #000;
     color: white;
@@ -14,7 +18,7 @@ body{
     display: flex;
     border-radius: 2rem;
     user-select: none;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     border: 0.5rem solid grey;
 }
 
@@ -49,4 +53,37 @@ body{
 
 .invisible {
     visibility: hidden;
+}
+@media (max-width: 600px){
+    .week{
+        font-size: 0.75rem;
+    }
+    .min,
+.hour,
+.dot {
+    display: inline-block;
+    font-size: 5rem;
+}
+}
+@media (max-width: 400px){
+    .week{
+        display: none;
+    }
+    .min,
+    .hour,
+    .dot {
+        display: inline-block;
+        font-size: 3rem;
+    }
+}
+@media (max-width: 200px){
+    .week{
+        display: none;
+    }
+    .min,
+    .hour,
+    .dot {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
 }
