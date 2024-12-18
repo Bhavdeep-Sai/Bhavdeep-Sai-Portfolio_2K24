@@ -2,33 +2,24 @@
     font-family: 'Digital-7';
     src: url('../fonts/digital-7.ttf');
 }
-
-body {
+body{
     background-color: black;
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
-
-.Contant {
+.contant{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    flex-direction: column;
+    padding-top: 100px ;
 }
-
 .digital-clock {
     background-color: #000;
     color: white;
-     
+    width: 50vw;
     justify-content: space-around;
     display: flex;
     border-radius: 2rem;
     user-select: none;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     border: 0.5rem solid grey;
-    flex-wrap: wrap; 
-    margin: 0 auto; 
 }
 
 .week {
@@ -36,7 +27,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    width: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: grey;
@@ -56,68 +47,49 @@ body {
     display: inline-block;
     font-size: 13rem;
 }
-
-.dot {
+.dot{
     color: red;
 }
 
 .invisible {
     visibility: hidden;
 }
-
-
-@media (max-width: 1024px) {
-    .digital-clock {
-        width: 70vw; 
+@media (max-width: 600px){
+    .week{
+        font-size: 0.75rem;
     }
-
     .min,
-    .hour,
-    .dot {
-        font-size: 10rem; 
-    }
-
-    .week {
-        font-size: 1.2rem; 
-    }
+.hour,
+.dot {
+    display: inline-block;
+    font-size: 5rem;
 }
-
-@media (max-width: 768px) {
-    .digital-clock {
-        width: 85vw; 
-        flex-direction: column; 
-        padding: 1rem;
-    }
-
-    .min,
-    .hour,
-    .dot {
-        font-size: 8rem; 
-    }
-
-    .week {
+}
+@media (max-width: 400px){
+    .week{
         display: none;
     }
-}
-
-@media (max-width: 480px) {
-    .digital-clock {
-        width: 90vw;
-        padding: 0.5rem;
-    }
-
     .min,
     .hour,
     .dot {
-        font-size: 6rem;
+        display: inline-block;
+        font-size: 3rem;
     }
-
-    .week {
-        font-size: 0.8rem;
-        width: auto;
+    .digital-clock{
+        border-width: 0.25rem;
     }
-
-    .Contant {
-        padding-top: 15%;
+}
+@media (max-width: 200px){
+    .week{
+        display: none;
+    }
+    .min,
+    .hour,
+    .dot {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    .digital-clock{
+        border-width: 0.25rem;
     }
 }
