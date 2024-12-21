@@ -1,263 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Bhavdeep Sai</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">Bhavdeep <span class="highlight">Sai</span></div>
-        <nav>
-            <ul class="nav-links" >
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#qualification">Qualification</a></li>
-                <li><a href="./Projects/projects.html">Projects</a></li>
-                <li><a href="#contact" id="contactBtn">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-
+      <div class="logo">Bhavdeep <span class="highlight">Sai</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#qualification">Qualification</a></li>
+          <li><a href="./Projects/projects.html">Projects</a></li>
+          <li><a href="#contact" id="contactBtn">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
-<!-- Contact popup -->
-<div id="contactPopup" class="popup">
-    <div class="popup-content">
+    <!-- Contact popup -->
+    <div id="contactPopup" class="popup">
+      <div class="popup-content">
         <span class="close">&times;</span>
         <h2><span id="Con">Contact</span> Me</h2>
         <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
         </form>
+      </div>
     </div>
-</div>
-
-
 
     <!-- Hero Section -->
     <section class="hero" id="about">
-        <div class="hero-image">
-            <img src="./images/profile.jpg" alt="Bhavdeep Sai">
+      <div class="hero-image">
+        <img src="./images/profile.jpg" alt="Bhavdeep Sai" />
+      </div>
+      <div class="hero-content">
+        <h1>Hey, I'm <span class="highlight-name">E. Bhavdeep Sai</span></h1>
+        <div class="typewriter">
+          I'm a <span class="typewriter-text"></span><label for="">|</label>
         </div>
-        <div class="hero-content">
-            <h1>Hey, I'm <span class="highlight-name">E. Bhavdeep Sai</span></h1>
-            <div class="typewriter" >I'm a <span class="typewriter-text"></span><label for="">|</label></div>
-            <p>
-                Currently, I am pursuing a BTech degree at <b>The Apollo University</b> in collaboration with the <b>Kalvium Community</b>. 
-                <br>
-                Throughout my academic journey, I am honing my skills in programming languages such as <span class="Plang">Python</span> and <span class="Plang"> C++</span>
-                <br>
-                I am building a solid foundation in UI/UX design, DSA.
-                <br>
-                I actively engage in group projects, collaborating with peers to develop innovative software applications and web designs.
-                Additionally, I participate in hackathons and coding competitions, challenging myself to solve complex problems under time constraints.
-            </p>
-            <!-- Social Icons -->
-            <div class="social-icons">
-                <a href="https://github.com/Bhavdeep-Sai"><i class="fab fa-github"></i></a>
-                <a href="http://www.linkedin.com/in/bhavdeepsai"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <p>
+          Currently, I am pursuing a BTech degree at
+          <b>The Apollo University</b> in collaboration with the
+          <b>Kalvium Community</b>.
+          <br />
+          Throughout my academic journey, I am honing my skills in programming
+          languages such as <span class="Plang">Python</span> and
+          <span class="Plang"> C++</span>
+          <br />
+          I am building a solid foundation in UI/UX design, DSA.
+          <br />
+          I actively engage in group projects, collaborating with peers to
+          develop innovative software applications and web designs.
+          Additionally, I participate in hackathons and coding competitions,
+          challenging myself to solve complex problems under time constraints.
+        </p>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://github.com/Bhavdeep-Sai"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="http://www.linkedin.com/in/bhavdeepsai"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
-
+      </div>
     </section>
-<div class="SKILL">
-<div id="SKILL">
-    <!-- Skills Section -->
-    <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+    <div class="SKILL">
+      <div id="SKILL">
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <span class="section__subtitle">My technical level</span>
 
-        <div class="skills__container container grid">
+          <div class="skills__container container grid">
             <div>
-                <!-- Skill: Data Analyst -->
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-analytics skills__icon"></i>
-                        <div>
-                            <h3 class="skills__title">Programming Languages</h3>
-                            <span class="skills__subtitle" style="color: red;">...</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Python</h3>
-                                <span class="skills__number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">C++</h3>
-                                <span class="skills__number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__google"></span>
-                            </div>
-                        </div>
-                    </div>
+              <!-- Skill: Data Analyst -->
+              <div class="skills__content skills__open">
+                <div class="skills__header">
+                  <i class="uil uil-analytics skills__icon"></i>
+                  <div>
+                    <h3 class="skills__title">Programming Languages</h3>
+                    <span class="skills__subtitle" style="color: red">...</span>
+                  </div>
+                  <i class="uil uil-angle-down skills__arrow"></i>
                 </div>
-
-                <!-- Skill: Web Developer -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h3 class="skills__title">Web Developer</h3>
-                            <span class="skills__subtitle" style="color: yellow;">-_-</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
+                <div class="skills__list grid">
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Python</h3>
+                      <span class="skills__number">60%</span>
                     </div>
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__css"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">JavaScript</h3>
-                                <span class="skills__number">30%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                            </div>
-                        </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__python"></span>
                     </div>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">C++</h3>
+                      <span class="skills__number">40%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__google"></span>
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <!-- Skill: Design -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h3 class="skills__title">UI/UX design</h3>
-                            <span class="skills__subtitle" style="color: blue;">^ - ^</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Figma</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__Figma"></span>
-                            </div>
-                        </div>
-
-                    </div>
+              <!-- Skill: Web Developer -->
+              <div class="skills__content skills__close">
+                <div class="skills__header">
+                  <i class="uil uil-brackets-curly skills__icon"></i>
+                  <div>
+                    <h3 class="skills__title">Web Developer</h3>
+                    <span class="skills__subtitle" style="color: yellow"
+                      >-_-</span
+                    >
+                  </div>
+                  <i class="uil uil-angle-down skills__arrow"></i>
                 </div>
+                <div class="skills__list grid">
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">HTML</h3>
+                      <span class="skills__number">90%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__html"></span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">CSS</h3>
+                      <span class="skills__number">60%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__css"></span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">JavaScript</h3>
+                      <span class="skills__number">30%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__js"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skill: Design -->
+              <div class="skills__content skills__close">
+                <div class="skills__header">
+                  <i class="uil uil-brackets-curly skills__icon"></i>
+                  <div>
+                    <h3 class="skills__title">UI/UX design</h3>
+                    <span class="skills__subtitle" style="color: blue"
+                      >^ - ^</span
+                    >
+                  </div>
+                  <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Figma</h3>
+                      <span class="skills__number">90%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__Figma"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Qualification Section -->
-    <section class="qualification__section" id="qualification">
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My personal journey</span>
-
-        <div class="qualification__container container">
-            <div class="qualification__tabs">
-                <div class="qualification__button button--flex qualification__active" data-target="#education">
-                    <i class="uil uil-graduation-cap qualification__icon"></i>
-                    Education
-                </div>
-            </div>
-
-            <div class="qualification__sections">
-                <!-- Education Content -->
-                <div class="qualification__content qualification__active" id="education">
-                    <!-- Qualification 1 -->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title"> Completed 10th grade</h3>
-                            <span class="qualification__subtitle">Sri Chaitanya School, Tadipatri, Anantapur.</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2020 - 2022
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-
-                    <!-- Qualification 2 -->
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="qualification__title">Completed 12th grade</h3>
-                            <span class="qualification__subtitle">Edify School, Tiruchanoor, Tirupati.</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2022 - 2024
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Qualification 3 -->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Btech</h3>
-                            <span class="qualification__subtitle">The Apollo University, Murukambattu, Chittoor.</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calendar-alt"></i>
-                                2024
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
+        </section>
+      </div>
     </div>
-</div>
+    <section id="qualification">
+      <div class="Con">
+        <div id="container">
+          <h1>My Qualifications</h1>
+          <div class="qualification">
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <strong><span class="head"> 10th Grade </span></strong><br />
+                Sri Chaitanya School, Anantapur <br /><span class="year"
+                  >2020 - 2022</span
+                >
+              </li>
+              <li>
+                <strong><span class="head">12th Grade</span></strong> <br />
+                Edify School,<br />
+                Tirupati <br /><span class="year">2022 - 2024</span>
+              </li>
+              <li>
+                <strong><span class="head">B-Tech</span></strong> <br />
+                The Apollo University <br />
+                Kalvium Community <br /><span class="year">2024 - 2028</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="small"></div>
+      <div class="medium"></div>
+      <div class="large"></div>
+      <div class="profile">
+        <div  class="round" > <img src="./images/Main.jpg" alt="main image"></imgsrc></div>
+
+        <div><h2>E. Bhavdeep Sai</h2></div>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-                        

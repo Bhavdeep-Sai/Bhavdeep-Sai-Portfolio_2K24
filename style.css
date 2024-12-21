@@ -363,7 +363,7 @@ header ul li a:hover {
 
 .skills__js {
   width: 20%;
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .skills__python {
@@ -408,125 +408,65 @@ header ul li a:hover {
   transform: rotate(-180deg);
 }
 
-/*==================== QUALIFICATION ====================*/
-.qualification__tabs {
+/* Qualifications */
+.Con{
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  justify-content: center;
+}
+#container {
+  background-color: rgb(61, 59, 59);
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
 }
 
-
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
+h1 {
+  text-align: center;
+  color: white;
 }
 
-.qualification__button:hover {
-  color: var(--first-color);
+.qualification {
+  margin-top: 20px;
 }
 
-.qualification__icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
-.qualification__data {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
+.qualification h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
   text-align: center;
 }
-
-.qualification__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi-bold);
-  color: #007BFF;
-}
-
-
-.qualification__subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.qualification__calendar {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-  /* margin-bottom: var(--mb-1) */
-}
-
-.qualification__rounder {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-}
-
-.qualification__line {
-  display: block;
-  width: 2px;
-  height: 100%;
-  background-color: var(--first-color);
-  transform: translate(6px, -7px);
-}
-
-.qualification__content[data-content] {
-  display: none;
-}
-
-.qualification__active[data-content] {
-  display: block;
-}
-
-.qualification__button.qualification__active {
-  color: var(--first-color);
-}
-
-/*========== SCROLL UP ==========*/
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  background-color: var(--first-color);
-  opacity: 0.8;
-  padding: 0 0.3rem;
-  border-radius: 0.4rem;
-  z-index: var(--z-tooltip);
-  transition: 0.4s;
-}
-
-.scrollup:hover {
-  background-color: var(--first-color-alt);
-}
-
-.scrollup__icon {
+.head{
   font-size: 1.5rem;
-  color: #fff;
+  font-weight: bold;
+  color: yellow;
+}
+.year{
+  opacity: 50%;
+  color: greenyellow;
+}
+.qualification ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-/* Show scroll */
-.show-scroll {
-  bottom: 5rem;
+.qualification li {
+  background-color: #f9f9f9;
+  color: orange;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  background-color: rgb(17, 17, 17);
 }
 
-/*========== SCROLL BAR ==========*/
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
-}
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-color-light);
-}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
@@ -902,6 +842,47 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+footer{
+  min-height: 500px;
+  background-color: rgb(80, 77, 77);
+  margin-top: 100px;
+  
+}
+.small{
+  background-color: rgb(250, 133, 133);
+  height: 5px;
+  width: 70%;
+  border-radius: 0 20px 20px 0;
+}
+.medium{
+  background-color: rgb(109, 253, 109);
+  height: 5px;
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+}
+.large{
+  background-color: rgb(117, 117, 255);
+  border-radius: 0 20px 20px 0;
+  height: 5px;
+  width: 30%;
+}
+.profile{
+display: flex;
+}
+.round{
+  height: 300px;
+  width: 300px;
+  background-color: green;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 40% 60% 65% 35% / 40% 45% 65% 60% ;
+  overflow: hidden;
+}
+.round img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 /*==================== MEDIA QUERIES ====================*/
 
