@@ -15,14 +15,18 @@
     <header>
         <div class="logo">Bhavdeep <span class="highlight">Sai</span></div>
         <nav>
-            <ul>
+            <ul class="nav-links" >
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#qualification">Qualification</a></li>
                 <li><a href="./Projects/projects.html">Projects</a></li>
                 <li><a href="#contact" id="contactBtn">Contact</a></li>
-
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
 
     </header>
@@ -30,7 +34,7 @@
 <div id="contactPopup" class="popup">
     <div class="popup-content">
         <span class="close">&times;</span>
-        <h2>Contact Us</h2>
+        <h2><span id="Con">Contact</span> Me</h2>
         <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -50,31 +54,29 @@
 
     <!-- Hero Section -->
     <section class="hero" id="about">
+        <div class="hero-image">
+            <img src="./images/profile.jpg" alt="Bhavdeep Sai">
+        </div>
         <div class="hero-content">
             <h1>Hey, I'm <span class="highlight-name">E. Bhavdeep Sai</span></h1>
             <div class="typewriter" >I'm a <span class="typewriter-text"></span><label for="">|</label></div>
             <p>
-                Currently pursuing a BTech degree at <strong>The Apollo University</strong> in collaboration with the
-                <em>Kalvium Community</em>. Throughout my academic journey, I am honing my skills in programming
-                languages such as Python and C++.
-            </p>
-            <p>
-                Building a solid foundation in UI/UX design, data structures, and algorithms. I actively work on group
-                projects, collaborating with peers to develop software applications and web designs.
-            </p>
-            <p>
-                I participate in hackathons and coding competitions, challenging myself to solve complex problems under
-                time constraints.
+                Currently, I am pursuing a BTech degree at <b>The Apollo University</b> in collaboration with the <b>Kalvium Community</b>. 
+                <br>
+                Throughout my academic journey, I am honing my skills in programming languages such as <span class="Plang">Python</span> and <span class="Plang"> C++</span>
+                <br>
+                I am building a solid foundation in UI/UX design, DSA.
+                <br>
+                I actively engage in group projects, collaborating with peers to develop innovative software applications and web designs.
+                Additionally, I participate in hackathons and coding competitions, challenging myself to solve complex problems under time constraints.
             </p>
             <!-- Social Icons -->
             <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Bhavdeep-Sai"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/bhavdeepsai"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="./images/Main.jpg" alt="Bhavdeep Sai">
-        </div>
+
     </section>
 <div class="SKILL">
 <div id="SKILL">
@@ -90,8 +92,8 @@
                     <div class="skills__header">
                         <i class="uil uil-analytics skills__icon"></i>
                         <div>
-                            <h3 class="skills__title">Data Analyst</h3>
-                            <span class="skills__subtitle">...</span>
+                            <h3 class="skills__title">Programming Languages</h3>
+                            <span class="skills__subtitle" style="color: red;">...</span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -123,7 +125,7 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
                         <div>
                             <h3 class="skills__title">Web Developer</h3>
-                            <span class="skills__subtitle">-_-</span>
+                            <span class="skills__subtitle" style="color: yellow;">-_-</span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -157,6 +159,30 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Skill: Design -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+                        <div>
+                            <h3 class="skills__title">UI/UX design</h3>
+                            <span class="skills__subtitle" style="color: blue;">^ - ^</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Figma</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__Figma"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -180,8 +206,8 @@
                     <!-- Qualification 1 -->
                     <div class="qualification__data">
                         <div>
-                            <h3 class="qualification__title">10th Passed</h3>
-                            <span class="qualification__subtitle">Narayana School, Chittoor</span>
+                            <h3 class="qualification__title"> Completed 10th grade</h3>
+                            <span class="qualification__subtitle">Sri Chaitanya School, Tadipatri, Anantapur.</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
                                 2020 - 2022
@@ -201,8 +227,8 @@
                             <span class="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 class="qualification__title">12th Passed</h3>
-                            <span class="qualification__subtitle">Narayana Junior College, Chittoor</span>
+                            <h3 class="qualification__title">Completed 12th grade</h3>
+                            <span class="qualification__subtitle">Edify School, Tiruchanoor, Tirupati.</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
                                 2022 - 2024
@@ -213,8 +239,8 @@
                     <!-- Qualification 3 -->
                     <div class="qualification__data">
                         <div>
-                            <h3 class="qualification__title">JEE Mains</h3>
-                            <span class="qualification__subtitle">Rank: 303778</span>
+                            <h3 class="qualification__title">Btech</h3>
+                            <span class="qualification__subtitle">The Apollo University, Murukambattu, Chittoor.</span>
                             <div class="qualification__calendar">
                                 <i class="uil uil-calendar-alt"></i>
                                 2024
@@ -222,17 +248,8 @@
                         </div>
                         <div>
                             <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
 
-                    <!-- Qualification 4 -->
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
