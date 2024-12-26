@@ -39,18 +39,28 @@
       <div class="popup-content">
         <span class="close">&times;</span>
         <h2><span id="Con">Contact</span> Me</h2>
-        <form id="contactForm">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="48bb7ec2-0060-494f-8e82-c49272052c79">
+      
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
-
+      
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
-
+      
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
-
+      
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+      
           <button type="submit">Submit</button>
-        </form>
+      </form>
+      
       </div>
     </div>
 
