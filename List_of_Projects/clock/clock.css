@@ -2,43 +2,65 @@
     font-family: 'Digital-7';
     src: url('../fonts/digital-7.ttf');
 }
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
 }
-.contant{
+
+.heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.contant {
     display: flex;
     justify-content: center;
-    padding-top: 100px ;
+    padding-top: 100px;
 }
+
 .digital-clock {
-    background-color: #000;
-    color: white;
-    width: 50vw;
-    justify-content: space-around;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    justify-content: space-evenly;
     display: flex;
+    width: 70%;
     border-radius: 2rem;
     user-select: none;
-    padding: 1rem 2rem;
-    border: 0.5rem solid grey;
+    border: 0.5rem solid #333;
 }
 
 .week {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
-    color: grey;
+    color: #757575;
+    flex-shrink: 1;
+    margin: 2% 15% 2% 20px;
+}
+
+.bar {
+    height: 100%;
+    margin: 0;
+    width: 10px;
+    background-color: #333;
 }
 
 .week .active {
-    color: yellow;
+    color: #ffeb3b;
 }
 
 .time {
     font-family: 'Digital-7', sans-serif;
+    flex-shrink: 1;
+    margin-right: 20px;
 }
 
 .min,
@@ -47,60 +69,70 @@ body{
     display: inline-block;
     font-size: 13rem;
 }
-.dot{
-    color: red;
+
+.dot {
+    color: #f44336;
 }
 
 .invisible {
     visibility: hidden;
 }
-@media (max-width: 800px){
-    .week{
+
+@media (max-width: 1000px) {
+    .week {
+        font-size: 1.5rem;
+    }
+    .min,
+    .hour,
+    .dot {
+        font-size: 8rem;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 800px) {
+    .week {
         font-size: 0.7rem;
     }
     .min,
-.hour,
-.dot {
-    display: inline-block;
-    font-size: 5rem;
+    .hour,
+    .dot {
+        font-size: 5rem;
+        margin-top: 7px;
+    }
 }
-}
-@media (max-width: 600px){
-    .week{
+
+@media (max-width: 600px) {
+    .week {
         font-size: 0.6rem;
     }
     .min,
-.hour,
-.dot {
-    display: inline-block;
-    font-size: 5rem;
-}
-}
-@media (max-width: 600px){
-    .week{
-        font-size: 0.5rem;
-    }
-    .min,
     .hour,
     .dot {
-        display: inline-block;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
-    .digital-clock{
-        border-width: 0.25rem;
+    .digital-clock {
+        border-width: 0.5rem;
+        border-radius: 10px;
     }
 }
-@media (max-width: 200px){
-    .week{
+
+@media (max-width: 400px) {
+    .week {
         display: none;
     }
+    .bar {
+        display: none;
+    }
+    .time{
+        margin-right: 0;
+    }
     .min,
     .hour,
     .dot {
-        display: inline-block;
-        font-size: 1.5rem;
+        font-size: 4rem;
     }
-    .digital-clock{
+    .digital-clock {
         border-width: 0.25rem;
+        border-radius: 15px;
     }
 }

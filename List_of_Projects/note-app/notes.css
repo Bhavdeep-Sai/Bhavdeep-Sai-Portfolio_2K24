@@ -1,21 +1,24 @@
 body {
   margin: 0;
-  background: linear-gradient(to left, #1fddff, #ff4b1f);
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
   font-family: "Courier New", Courier, monospace;
+  color: #f5f5f5;
 }
 
 .heading {
-  color: #432818;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #f5f5f5;
   text-align: center;
   padding-top: 10px;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .info-text {
-  text-align: center;
-  color: #6f1d1b;
-  font-size: 20px;
+  text-align: right;
+  color: #d3d3d3;
+  font-size: 25px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .app {
@@ -25,8 +28,9 @@ body {
   justify-content: center;
   padding: 50px;
   margin: 0 5%;
-  border: 2px solid black;
+  border: 2px solid #f5f5f5;
   border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .note {
@@ -36,7 +40,7 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   font-size: 18px;
   height: 200px;
-  color: #450920;
+  color: #f5f5f5;
   border: none;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
@@ -45,29 +49,29 @@ body {
 }
 
 .note::placeholder {
-  color: black;
+  color: #d3d3d3;
   opacity: 50%;
 }
 
 .note:hover,
 .note:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 5px rgb(241, 121, 215);
   transition: all 300ms ease;
 }
 
-.btn{
-    height: 200px;
-    border-color: rgba(255, 255, 255, 0.37);
-    background: rgba(255, 255, 255, 0.27);
-    border-radius: 15px;
-    font-size: 70px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+.btn {
+  height: 200px;
+  border-color: rgba(255, 255, 255, 0.37);
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 15px;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 
-.btn:hover{
-    background: rgba(41, 40, 40, 0.55);
-    color: rgba(0, 0, 0, 0.6);
-    transition: all 300ms ease;
+.btn:hover {
+  background: rgba(41, 40, 40, 0.55);
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 300ms ease;
 }
