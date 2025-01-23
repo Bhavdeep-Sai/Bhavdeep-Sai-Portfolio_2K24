@@ -29,6 +29,4 @@ You can reach me at:
 - GitHub: [Bhavdeep-Sai](https://github.com/Bhavdeep-Sai)
 
 Thank you for visiting my portfolio!
-```
 
-Feel free to customize it further to match your personal style and preferences. Happy coding!
